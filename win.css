@@ -1,0 +1,122 @@
+h1, h3 {
+    color:#666;
+    font-family:sans-serif;
+}
+
+.screen {
+    background:url(train.jpg);
+    width:1000px;
+    height:500px;
+    overflow:hidden;
+    position:relative;
+    -moz-perspective:600px;
+}
+
+.cube {
+    width:300px;
+    height:200px;
+    position:absolute;
+}
+
+.cube .title {
+    color:#fff;
+    font-family:sans-serif;
+    font-weight:lighter;
+    padding:16px;
+}
+
+.title span {
+    display:block;
+    font-size:12px;
+    padding-top:8px;
+}
+
+.red {
+    background:#ed4343;
+    top:50px;
+    left:550px;
+   -moz-transform-origin: right center;
+   -moz-transform-style: preserve-3d;
+   -moz-transition: -moz-transform 0.5s ease-in-out;
+    z-index:50;
+}
+
+.blue {
+    background:#43b7ed;
+    top:50px;
+    left:150px;
+    -moz-transform-origin: left center;     
+    -moz-transform-style: preserve-3d;
+    -moz-transition: -moz-transform 0.5s ease-in-out;
+        z-index:50;
+}
+
+.header {
+    background:#222222;
+    position:absolute;
+    top:-40px;
+    height:40px;
+    line-height:40px;
+    color:#fff;
+    font-weight:bold;
+    font-family:sans-serif;
+    text-align:center;
+    width:100%;
+    opacity:0.8;
+    -moz-transition: -moz-transform 0.5s ease;
+}
+
+.screen:hover .red {
+        -moz-transform: rotateY(-70deg) translateX(150px) translateY(24px) translateZ(50px);
+}
+.screen:hover .blue {
+        -moz-transform: rotateY(70deg) translateX( -150px ) translateY(24px) translateZ(50px);
+}
+
+.screen:hover .header {
+    -moz-transform: translateY(40px);
+}
+
+.screen:hover .next {
+ opacity:1;   
+        margin-top:0px;
+}
+
+.next {
+    background: magenta;
+    top:50px;
+    left:350px;
+    -moz-transform-origin: left center;     
+    -moz-transform-style: preserve-3d;
+    -moz-transition: all 0.6s ease-in-out;
+    z-index:1;
+     -moz-transform: translate3d( -50px, 400px, -800px );
+    box-shadow:0px 0px 30px 10px #eee;
+    opacity:0.4;
+}
+
+.screen .next {
+    -moz-transform: translate3d( 0px, 20px, 0px );
+    box-shadow:none;
+    opacity:0;
+    margin-top:250px;
+}
+
+.nextNext {
+    background:#0f0;
+    top:50px;
+    left:350px;
+    -moz-transform-origin: left center;     
+    -moz-transform-style: preserve-3d;
+    -moz-transition: all 0.6s ease-in-out;
+    z-index:100;
+     -moz-transform: translate3d( 0px, 600px, 600px );
+    box-shadow:0px 0px 20px 10px #ed4343;
+    opacity:0.4;
+}
+
+.screen:hover .nextNext {
+    -moz-transform: translate3d( 0px, 240px, 0px );
+    box-shadow:none;
+    opacity:0.9;
+}
