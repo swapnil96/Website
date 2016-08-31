@@ -11,7 +11,7 @@
     margin-bottom: 12px;
     padding-bottom: 12px;
     float: left;
-    padding-left: 50px;
+    padding-left: 20px;
 }
 .about-subtitle{
   color:white;
@@ -29,8 +29,10 @@
   left: 50px;
   text-transform: none !important;
 }
-#tab p{
-
+.CV{
+  position: absolute;
+  left: 500px;
+  text-transform: none !important;
 }
 body {
   width: 100%;
@@ -153,7 +155,7 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: white;
-  background: url(../../Images/intro-bg.jpg) no-repeat bottom center scroll;
+  background: url(../../Images/texture.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -318,6 +320,7 @@ ul.banner-social-buttons {
 }
 footer {
   padding: 50px 0;
+  color: gray;
 }
 footer p {
   margin: 0;
